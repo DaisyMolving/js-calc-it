@@ -27,7 +27,6 @@ var numbers = document.getElementsByClassName("number");
 for(var i = 0; i < numbers.length; i++){
   numbers[i].addEventListener('click', function(event) {
   inputNumbers.push(this.value);
-  firstNumber=(this.value);
   });
 };
 
@@ -45,6 +44,8 @@ for(var i = 0; i < operators.length; i++){
 // var firstNumber = inputNumbers[0];
 // var secondNumber = inputNumbers[1];
 
+//make equation that firstNumber (function of +, -, /, *) secondNumber equals result.
+
 var equals = document.getElementsByClassName("eq");
 
 // for(var i = 0; i < operators.length; i++){
@@ -53,7 +54,7 @@ var equals = document.getElementsByClassName("eq");
 
   if (operatorType === "+") {
          {
-          ans = (inputNumbers[0] + inputNumbers[1]);
+          ans = (Number(inputNumbers[0]) + Number(inputNumbers[1]));
         }
   } else if (operatorType === "-") {
          { 
@@ -103,7 +104,7 @@ console.log(ans);
   // }
 
 
-//make equation that firstNumber (function of +, -, /, *) secondNumber equals result.
+
 //event of clicking equals cues result, which prints to screen
 
 //show result on screen
