@@ -30,8 +30,6 @@ for(var i = 0; i < numbers.length; i++){
   });
 };
 
-var firstNumber = inputNumbers[0];
-var secondNumber = inputNumbers[1];
 
 
 
@@ -43,6 +41,19 @@ for(var i = 0; i < operators.length; i++){
   });
 };
 
+var equals = document.getElementsByClassName("eq");
+
+for(var i = 0; i < operators.length; i++){
+  equals[i].addEventListener('click', function(event) {
+  finalResult=(this.value);
+  });
+
+
+// var equals = function() {
+//   var firstNumber = inputNumbers[0];
+//   var secondNumber = inputNumbers[1];
+//   console.log (firstNumber + operatorType + secondNumber);
+// };
 
 
 
