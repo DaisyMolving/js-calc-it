@@ -1,4 +1,32 @@
+
+
 //define numbers so that when you click one it appears on screen (variables, get id, click event, console.log result on screen)
+
+var numbers = document.getElementsByClassName("number");
+// var foodArray = ['apples', 'cucumber', 'chocolate'];
+
+// //write a fnction that will output "i like " each element in foodArray
+
+// foodArray.forEach(function(foodType) {
+//   console.log("i like " + foodType)
+// });
+
+// numbers[0].addEventListener('click', function(event) {
+//   debugger;
+//   // var whichNumber = event.target("number").value;
+//   // alert(whichNumber);
+// });
+
+// var b = numbers.split(1,5);
+
+for(var i = 0; i < numbers.length; i++){
+  numbers[i].addEventListener('click', function(event) {
+
+  console.log(this.value);
+  });
+};
+
+
 
 //make these variables firstNumber, secondNumber)
 
@@ -22,7 +50,7 @@
         alert(firstNumber / secondNumber);
         }
   }
-}
+
 
 //make equation that firstNumber (function of +, -, /, *) secondNumber equals result.
 //event of clicking equals cues result, which prints to screen
