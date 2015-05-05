@@ -5,6 +5,7 @@
 var inputNumbers = [];
 // var secondNumber = "";
 var operatorType = "";
+var ans = "";
 
 
 var numbers = document.getElementsByClassName("number");
@@ -31,7 +32,7 @@ for(var i = 0; i < numbers.length; i++){
 };
 
 
-
+//make these variables firstNumber, secondNumber)
 
 var operators = document.getElementsByClassName("operator");
 
@@ -44,42 +45,61 @@ for(var i = 0; i < operators.length; i++){
 var equals = document.getElementsByClassName("eq");
 
 for(var i = 0; i < operators.length; i++){
-  equals[i].addEventListener('click', function(event) {
-  finalResult=(this.value);
+  equals[0].addEventListener('click', function(event) {
+  equalsButton=(this.value);
+   var firstNumber = inputNumbers[0];
+  var secondNumber = inputNumbers[1];
+
+  if (operatorType==="+") {
+         {
+          ans = firstNumber + secondNumber);
+        }
+  } else if (operatorType === "-") {
+         { 
+          ans = firstNumber - secondNumber);
+          }
+  } else if (operatorType === "*") {
+        { 
+          ans = firstNumber * secondNumber);
+      }
+  } else if (operatorType === "/") {
+         {
+          ans = firstNumber / secondNumber);
+        }
+  }
+
   });
 
-
-// var equals = function() {
-//   var firstNumber = inputNumbers[0];
-//   var secondNumber = inputNumbers[1];
-//   console.log (firstNumber + operatorType + secondNumber);
-// };
+console.log(ans);
 
 
 
 
-//make these variables firstNumber, secondNumber)
+
+
+
+
 
 //attach +, -, /, * buttons to functions    
 
 //this is my code from first calculator project. different input this time -> not prompt but result of event
-    if (basicOperation === "add") {
-         {
-          alert (firstNumber + secondNumber);
-        }
-  } else if (basicOperation === "subtract") {
-         { 
-            alert(firstNumber - secondNumber);
-          }
-  } else if (basicOperation === "multiply") {
-        { 
-        alert(firstNumber * secondNumber);
-      }
-  } else if (basicOperation === "divide") {
-         {
-        alert(firstNumber / secondNumber);
-        }
-  }
+  //   if (basicOperation === "add") {
+  //        {
+  //         alert (firstNumber + secondNumber);
+  //       }
+  // } else if (basicOperation === "subtract") {
+  //        { 
+  //          firstNumber - secondNumber);
+  //         }
+  // } else if (basicOperation === "multiply") {
+  //       { 
+  //       alert(firstNumber * secondNumber);
+  //     }
+  // } else if (basicOperation === "divide") {
+  //        {
+  //       alert(firstNumber / secondNumber);
+  //       }
+  // }
 
 
 //make equation that firstNumber (function of +, -, /, *) secondNumber equals result.
