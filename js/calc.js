@@ -1,9 +1,9 @@
 
 
 //define numbers so that when you click one it appears on screen (variables, get id, click event, console.log result on screen)
-var firstNumber = "";
-// var inputNumbers = [];
-var secondNumber = "";
+// var firstNumber = "";
+var inputNumbers = [];
+// var secondNumber = "";
 var operatorType = "";
 
 
@@ -26,14 +26,12 @@ var numbers = document.getElementsByClassName("number");
 for(var i = 0; i < numbers.length; i++){
   numbers[i].addEventListener('click', function(event) {
     console.log(this.value);
-  firstNumber.push(this.value);
-  debugger;
-  // firstNumber=this.value;
-  // secondNumber = this.value;
+  inputNumbers.push(this.value);
   });
 };
 
-console.log("first number", firstNumber);
+var firstNumber = inputNumbers[0];
+var secondNumber = inputNumbers[1];
 
 
 
