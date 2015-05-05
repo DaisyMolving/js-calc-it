@@ -58,21 +58,21 @@ var equals = document.getElementsByClassName("eq");
         }
   } else if (operatorType === "-") {
          { 
-          ans = (inputNumbers[0] - inputNumbers[1]);
+          ans = (Number(inputNumbers[0]) - Number(inputNumbers[1]));
           }
   } else if (operatorType === "*") {
         { 
-          ans = (inputNumbers[0] * inputNumbers[1]);
+          ans = (Number(inputNumbers[0]) * Number(inputNumbers[1]));
       }
   } else if (operatorType === "/") {
          {
-          ans = (inputNumbers[0] / inputNumbers[1]);
+          ans = (Number(inputNumbers[0]) / Number(inputNumbers[1]));
         }
+  console.log.document.getElementsById("showme").value=ans;
   }
 
   });
 
-console.log(ans);
 
 
 
