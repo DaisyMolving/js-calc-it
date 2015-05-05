@@ -26,8 +26,8 @@ var numbers = document.getElementsByClassName("number");
 // var b = numbers.split(1,5);
 for(var i = 0; i < numbers.length; i++){
   numbers[i].addEventListener('click', function(event) {
-    console.log(this.value);
   inputNumbers.push(this.value);
+  firstNumber=(this.value);
   });
 };
 
@@ -42,29 +42,30 @@ for(var i = 0; i < operators.length; i++){
   });
 };
 
+// var firstNumber = inputNumbers[0];
+// var secondNumber = inputNumbers[1];
+
 var equals = document.getElementsByClassName("eq");
 
-for(var i = 0; i < operators.length; i++){
+// for(var i = 0; i < operators.length; i++){
   equals[0].addEventListener('click', function(event) {
   equalsButton=(this.value);
-   var firstNumber = inputNumbers[0];
-  var secondNumber = inputNumbers[1];
 
-  if (operatorType==="+") {
+  if (operatorType === "+") {
          {
-          ans = firstNumber + secondNumber);
+          ans = (inputNumbers[0] + inputNumbers[1]);
         }
   } else if (operatorType === "-") {
          { 
-          ans = firstNumber - secondNumber);
+          ans = (inputNumbers[0] - inputNumbers[1]);
           }
   } else if (operatorType === "*") {
         { 
-          ans = firstNumber * secondNumber);
+          ans = (inputNumbers[0] * inputNumbers[1]);
       }
   } else if (operatorType === "/") {
          {
-          ans = firstNumber / secondNumber);
+          ans = (inputNumbers[0] / inputNumbers[1]);
         }
   }
 
