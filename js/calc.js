@@ -1,6 +1,11 @@
 
 
 //define numbers so that when you click one it appears on screen (variables, get id, click event, console.log result on screen)
+var firstNumber = "";
+// var inputNumbers = [];
+var secondNumber = "";
+var operatorType = "";
+
 
 var numbers = document.getElementsByClassName("number");
 // var foodArray = ['apples', 'cucumber', 'chocolate'];
@@ -18,13 +23,29 @@ var numbers = document.getElementsByClassName("number");
 // });
 
 // var b = numbers.split(1,5);
-
 for(var i = 0; i < numbers.length; i++){
   numbers[i].addEventListener('click', function(event) {
-
-  console.log(this.value);
+    console.log(this.value);
+  firstNumber.push(this.value);
+  debugger;
+  // firstNumber=this.value;
+  // secondNumber = this.value;
   });
 };
+
+console.log("first number", firstNumber);
+
+
+
+var operators = document.getElementsByClassName("operator");
+
+for(var i = 0; i < operators.length; i++){
+  operators[i].addEventListener('click', function(event) {
+  operatorType=(this.value);
+  });
+};
+
+
 
 
 
